@@ -16,7 +16,7 @@ def merge(customList, l, m, r):
 
     i, j, k = 0, 0, l
 
-    # Merging them back in sorted order
+    # # # Merging them back in sorted order
 
     # For both Left and Right Cases
     while i < n1 and j < n2:
