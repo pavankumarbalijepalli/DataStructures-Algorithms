@@ -8,17 +8,14 @@ class TreeNode:
         self.right = None
 
 
-bst = TreeNode(7)
-
-
-def printInLevels(rootNode, level=0):
-    if rootNode.value is None:
-        print('Tree does not exist')
+def printInLevels(rootNode, level=0, side='M'):
+    if rootNode is None:
+        # print('Tree does not exist')
         return
     else:
-        print('  '*level + '|_' + str(rootNode.value))
-        printInLevels(rootNode.left, level+1)
-        printInLevels(rootNode.right, level+1)
+        print('  '*level + side + '|_' + str(rootNode.value))
+        printInLevels(rootNode.left, level+1, side='L')
+        printInLevels(rootNode.right, level+1, side='R')
 
 
 def insertNode(rootNode, value):
@@ -104,17 +101,20 @@ def deleteBinaryTree(rootNode):
     rootNode.right = None
 
 
-insertNode(bst, 5)
-insertNode(bst, 9)
-insertNode(bst, 3)
-insertNode(bst, 6)
-insertNode(bst, 8)
-insertNode(bst, 10)
-insertNode(bst, 2)
-insertNode(bst, 4)
-deleteNode(bst, 7)
-deleteBinaryTree(bst)
+if __name__ == '__main__':
+    bst = TreeNode(7)
 
-print('  ')
-# print(searchNode(bst, 17))
-printInLevels(bst)
+    insertNode(bst, 5)
+    insertNode(bst, 9)
+    insertNode(bst, 3)
+    insertNode(bst, 6)
+    insertNode(bst, 8)
+    insertNode(bst, 10)
+    insertNode(bst, 2)
+    insertNode(bst, 4)
+    # deleteNode(bst, 7)
+    # deleteBinaryTree(bst)
+
+    print('  ')
+    # print(searchNode(bst, 17))
+    printInLevels(bst)

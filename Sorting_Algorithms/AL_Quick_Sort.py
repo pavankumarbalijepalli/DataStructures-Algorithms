@@ -25,15 +25,20 @@ def partition(customlist, low, high):
     return (i+1)
 
 
-def quicksort(customlist, low, high):
+def _quicksort(customlist, low, high):
     if low < high:
         pi = partition(customlist, low, high)
-        quicksort(customlist, low, pi-1)
-        quicksort(customlist, pi+1, high)
+        _quicksort(customlist, low, pi-1)
+        _quicksort(customlist, pi+1, high)
 
     return customlist
 
 
+def quicksort(customList):
+    return _quicksort(customList, 0, len(customList)-1)
+
+
 if __name__ == "__main__":
+
     customList = [6, 8, 4, 5, 2, 7, 9, 3, 1]
-    print(quicksort(customList, 0, 8))
+    print(quicksort(customList))
