@@ -39,6 +39,5 @@ def quicksort(customList):
 
 
 if __name__ == "__main__":
-
     customList = [6, 8, 4, 5, 2, 7, 9, 3, 1]
     print(quicksort(customList))
