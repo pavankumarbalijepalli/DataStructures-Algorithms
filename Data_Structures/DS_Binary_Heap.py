@@ -119,6 +119,11 @@ def extract(rootNode: Heap, heapType: str):
         return extractedNode
 
 
+def deleteBinaryHeap(rootNode: Heap):
+    rootNode.customList = None
+    rootNode.heapSize = 0
+
+
 if __name__ == "__main__":
     customHeap = Heap(10)
     insert(customHeap, 1, 'Max')
@@ -133,4 +138,7 @@ if __name__ == "__main__":
     levelOrderTraversal(customHeap)
     print('----')
     extract(customHeap, 'Max')
+    levelOrderTraversal(customHeap)
+    print('----')
+    deleteBinaryHeap(customHeap)
     levelOrderTraversal(customHeap)
