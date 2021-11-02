@@ -8,4 +8,4 @@ def hasPythagoranTriplet(customList: list):
 
 
 if __name__ == '__main__':
-    hasPythagoranTriplet(range(29, 50))
+    hasPythagoranTriplet(range(3, 4))

@@ -34,6 +34,7 @@ def heapifyTreeInsert(rootNode: Heap, index: int, heapType: str):
     parentIndex = index//2
     if index <= 1:
         return
+
     if heapType == 'Min':
         if rootNode.customList[index] < rootNode.customList[parentIndex]:
             (rootNode.customList[index],
@@ -135,10 +136,7 @@ if __name__ == "__main__":
     insert(customHeap, 7, 'Max')
     insert(customHeap, 8, 'Max')
     insert(customHeap, 9, 'Max')
-    levelOrderTraversal(customHeap)
-    print('----')
+    insert(customHeap, 0, 'Max')
+    print(customHeap.customList)
     extract(customHeap, 'Max')
-    levelOrderTraversal(customHeap)
-    print('----')
-    deleteBinaryHeap(customHeap)
-    levelOrderTraversal(customHeap)
+    print(customHeap.customList)
