@@ -8,3 +8,8 @@ __Date: 28/05/2022 08:27:19__
 * __Working on:__ creating script for log file automation
 * __Feeling:__ positive
 * __Description:__ feeling excited to start my learnings on dsa and get better at logic building
+
+__Date: 28/05/2022 23:02:06__
+* __Working on:__ Car Fleet Problem. Also solved few Easy-Level questions today.
+* __Feeling:__ positive
+* __Description:__ I can make a logical solution to the problem but I'm suffering to implement it in code.
