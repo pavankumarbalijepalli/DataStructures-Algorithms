@@ -60,6 +60,33 @@ class DLinkedList:
         current.next.prev = current.prev
         current.prev.next = current.next
 
+    def insertAfterPosition(self, data, position):
+        if position<1:
+            print('provide proper position.')
+            return
+        node = Node(data)
+        if self.head == None and position == 0:
+            self.head = node
+            self.tail = node
+            return
+        curr = self.head
+        for i in range(1, position):
+            if curr.next:
+                curr = curr.next
+            else:
+                print('position not available in LL')
+                return
+        print(curr.data, "--")
+
+        node.prev = curr
+        node.next = curr.next 
+        curr.next = node
+        if curr.next:
+            curr.next.prev = node
+
+
+        
+
     def printlist(self):
         current = self.head
         while current:
@@ -73,7 +100,10 @@ if __name__ == "__main__":
     dll.insertEnd(2)
     dll.insertEnd(3)
     dll.insertEnd(4)
-    dll.delete(1)
-    dll.delete(4)
-    dll.delete(5)
+    # dll.delete(1)
+    # dll.delete(4)
+    # dll.delete(5)
+    # dll.printlist()
+    dll.insertAfterPosition(data=5, position=2)
     dll.printlist()
+
