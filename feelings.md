@@ -18,3 +18,8 @@ __Date: 29/05/2022 21:53:25__
 * __Working on:__ Various problems including the ones previously done.
 * __Feeling:__ neutral
 * __Description:__ feeling okay. idk, the whole masters thing along with the interview prep, along with the job is a bit energy draining.
+
+__Date: 30/05/2022 23:26:25__
+* __Working on:__ Division without '/' operator and Longest Common Prefix.
+* __Feeling:__ positive
+* __Description:__ I wrote a code and it just ran without any errors or corner cases asked for the first run. Felt so good. Learnt a lot about bit-wise operators.
