@@ -1,7 +1,7 @@
 # Question: https://leetcode.com/problems/longest-common-prefix/
 
 class Solution:
-    def longestCommonPrefix(self, strs: List[str]) -> str:
+    def longestCommonPrefix(self, strs: list) -> str:
         prefix = strs[0]
         strs = strs[1:]
         while strs:

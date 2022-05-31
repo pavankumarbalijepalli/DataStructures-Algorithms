@@ -1,7 +1,7 @@
 # A linked list node structure
 class Node:
     def __init__(self, key):
-        self.value = key ;
+        self.value = key
         self.next = None
  
 def compare(list1, list2):

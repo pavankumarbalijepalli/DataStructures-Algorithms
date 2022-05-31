@@ -23,3 +23,8 @@ __Date: 30/05/2022 23:26:25__
 * __Working on:__ Division without '/' operator and Longest Common Prefix.
 * __Feeling:__ positive
 * __Description:__ I wrote a code and it just ran without any errors or corner cases asked for the first run. Felt so good. Learnt a lot about bit-wise operators.
+
+__Date: 31/05/2022 23:13:25__
+* __Working on:__ Binary code in string problem
+* __Feeling:__ positive
+* __Description:__ Learning new ways to see problems and how my brute force techniques are not efficient. Bad day at work and IRL tho.
