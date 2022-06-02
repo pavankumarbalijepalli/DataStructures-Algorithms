@@ -33,3 +33,8 @@ __Date: 1/06/2022 21:15:05__
 * __Working on:__ Running Sum problem
 * __Feeling:__ neutral
 * __Description:__ Brute was the efficient version. Work was hectic. Feeling overwhelmed by all the master's stuff and interview prep and office work.
+
+__Date: 2/06/2022 23:17:16__
+* __Working on:__ Integer to Roman
+* __Feeling:__ positive
+* __Description:__ Came up with the solution all by myself. Feeling amazing. I'm remembering few things from past.
