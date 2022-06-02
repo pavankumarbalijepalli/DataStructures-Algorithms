@@ -28,3 +28,8 @@ __Date: 31/05/2022 23:13:25__
 * __Working on:__ Binary code in string problem
 * __Feeling:__ positive
 * __Description:__ Learning new ways to see problems and how my brute force techniques are not efficient. Bad day at work and IRL tho.
+
+__Date: 1/06/2022 21:15:05__
+* __Working on:__ Running Sum problem
+* __Feeling:__ neutral
+* __Description:__ Brute was the efficient version. Work was hectic. Feeling overwhelmed by all the master's stuff and interview prep and office work.
