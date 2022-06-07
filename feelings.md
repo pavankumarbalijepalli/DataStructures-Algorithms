@@ -38,3 +38,8 @@ __Date: 2/06/2022 23:17:16__
 * __Working on:__ Integer to Roman
 * __Feeling:__ positive
 * __Description:__ Came up with the solution all by myself. Feeling amazing. I'm remembering few things from past.
+
+__Date: 7/06/2022 17:26:03__
+* __Working on:__ Getting better at life
+* __Feeling:__ negative
+* __Description:__ I feel like I'm not enough. I don't know how I concluded that but I feel that from a partially down internet connection but, that happened.
