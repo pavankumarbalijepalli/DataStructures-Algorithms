@@ -43,3 +43,9 @@ __Date: 7/06/2022 17:26:03__
 * __Working on:__ Getting better at life
 * __Feeling:__ negative
 * __Description:__ I feel like I'm not enough. I don't know how I concluded that but I feel that from a partially down internet connection but, that happened.
+
+__Date: 10/06/2022 18:40:44__
+* __Working on:__ Started DSA Study Path
+* __Feeling:__ positive
+* __Description:__ This was good. I tried submitting the code for the first time and it accepted with 87% better than others. Even though it was an easy question, feeling is dope.
+
