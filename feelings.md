@@ -49,3 +49,9 @@ __Date: 10/06/2022 18:40:44__
 * __Feeling:__ positive
 * __Description:__ This was good. I tried submitting the code for the first time and it accepted with 87% better than others. Even though it was an easy question, feeling is dope.
 
+
+
+__Date: 16/06/2022 16:04:00__
+* __Working on:__ Data Structures Learning Path
+* __Feeling:__ positive
+* __Description:__ It's been a while, I've updated this. I understood I'm strong with LinkedList and HashTables. I was able to get the brute force for all the questions and Efficient solutions for most of them as well. I can see the Learning path working
