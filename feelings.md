@@ -55,3 +55,8 @@ __Date: 16/06/2022 16:04:00__
 * __Working on:__ Data Structures Learning Path
 * __Feeling:__ positive
 * __Description:__ It's been a while, I've updated this. I understood I'm strong with LinkedList and HashTables. I was able to get the brute force for all the questions and Efficient solutions for most of them as well. I can see the Learning path working
+
+__Date: 21/06/2022 21:42:18__
+* __Working on:__ Blind 75
+* __Feeling:__ positive
+* __Description:__ feeling good. Just finished DSA assignment for my masters. Will start Blind 5 questions now.
