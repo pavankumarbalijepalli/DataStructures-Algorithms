@@ -1,5 +1,5 @@
 def partition(customlist, low, high):
-
+    print(1)
     # Index of smaller element
     i = low - 1
 
@@ -24,13 +24,17 @@ def partition(customlist, low, high):
     # Returning the partition index
     return (i+1)
 
+list = 0
 
 def _quicksort(customlist, low, high):
+    global list
+    list += 1
+    print(list)
     if low < high:
         pi = partition(customlist, low, high)
         _quicksort(customlist, low, pi-1)
         _quicksort(customlist, pi+1, high)
-
+    list -= 1
     return customlist
 
 
@@ -39,5 +43,6 @@ def quicksort(customList):
 
 
 if __name__ == "__main__":
-    customList = [6, 8, 4, 5, 2, 7, 9, 3, 1]
+    # customList = [6, 8, 4, 5, 2, 7, 9, 3, 1]
+    customList = [1, 2, 3, 4, 5, 6, 7, 8, 9]
     print(quicksort(customList))

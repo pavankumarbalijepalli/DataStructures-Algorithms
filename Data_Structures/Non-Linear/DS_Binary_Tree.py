@@ -1,9 +1,8 @@
-from DS_Queue import Queue
-
+from queue import Queue
 
 class TreeNode:
     def __init__(self, value):
-        self.value = value
+        self.data = value
         self.left = None
         self.right = None
 
@@ -47,14 +46,14 @@ def levelOrderTraversal(rootNode):
         return
     else:
         tqueue = Queue()
-        tqueue.enque(rootNode)
-        while not(tqueue.isEmpty()):
-            root = tqueue.deque()
-            print(root.data.value)
-            if (root.data.left is not None):
-                tqueue.enque(root.data.left)
-            if (root.data.right is not None):
-                tqueue.enque(root.data.right)
+        tqueue.put(rootNode)
+        while not(tqueue.empty()):
+            root = tqueue.get()
+            print(root.data)
+            if (root.left is not None):
+                tqueue.put(root.left)
+            if (root.right is not None):
+                tqueue.put(root.right)
 
 
 def searchBinaryTree(rootNode, value):
@@ -62,15 +61,15 @@ def searchBinaryTree(rootNode, value):
         return 'Binary Tree is Empty.'
     else:
         squeue = Queue()
-        squeue.enque(rootNode)
-        while not(squeue.isEmpty()):
-            root = squeue.deque()
-            if root.data.value == value:
+        squeue.put(rootNode)
+        while not(squeue.empty()):
+            root = squeue.get()
+            if root.data == value:
                 return '\nFound.'
-            if (root.data.left is not None):
-                squeue.enque(root.data.left)
-            if (root.data.right is not None):
-                squeue.enque(root.data.right)
+            if (root.left is not None):
+                squeue.put(root.left)
+            if (root.right is not None):
+                squeue.put(root.right)
         return '\nNot Found.'
 
 
@@ -80,20 +79,20 @@ def insertNode(rootNode, value):
         rootNode = node
     else:
         iq = Queue()
-        iq.enque(rootNode)
-        while not(iq.isEmpty()):
-            root = iq.deque()
+        iq.put(rootNode)
+        while not(iq.empty()):
+            root = iq.get()
 
-            if root.data.left is not None:
-                iq.enque(root.data.left)
+            if root.left is not None:
+                iq.put(root.left)
             else:
-                root.data.left = node
+                root.left = node
                 return
 
-            if root.data.right is not None:
-                iq.enque(root.data.right)
+            if root.right is not None:
+                iq.put(root.right)
             else:
-                root.data.right = node
+                root.right = node
                 return
 
 
@@ -102,13 +101,13 @@ def deepestNode(rootNode):
         return 'Empty'
     else:
         dq = Queue()
-        dq.enque(rootNode)
-        while not(dq.isEmpty()):
-            root = dq.deque()
-            if root.data.left is not None:
-                dq.enque(root.data.left)
-            if root.data.right is not None:
-                dq.enque(root.data.right)
+        dq.put(rootNode)
+        while not(dq.empty()):
+            root = dq.get()
+            if root.left is not None:
+                dq.put(root.left)
+            if root.right is not None:
+                dq.put(root.right)
         return root.data
 
 
@@ -117,25 +116,25 @@ def deleteDeepNode(rootNode, deepestNode):
         return
     else:
         dq = Queue()
-        dq.enque(rootNode)
-        while not(dq.isEmpty()):
-            root = dq.deque()
+        dq.put(rootNode)
+        while not(dq.empty()):
+            root = dq.get()
             if root.data is deepestNode:
                 root.data = None
                 return
-            if root.data.left is not None:
-                if root.data.left is deepestNode:
-                    root.data.left = None
+            if root.left is not None:
+                if root.left is deepestNode:
+                    root.left = None
                     return
                 else:
-                    dq.enque(root.data.left)
+                    dq.put(root.left)
 
-            if root.data.right is not None:
-                if root.data.right is deepestNode:
-                    root.data.right = None
+            if root.right is not None:
+                if root.right is deepestNode:
+                    root.right = None
                     return
                 else:
-                    dq.enque(root.data.right)
+                    dq.put(root.right)
 
 
 def deleteNode(rootNode, value):
@@ -143,19 +142,19 @@ def deleteNode(rootNode, value):
         return
     else:
         dq = Queue()
-        dq.enque(rootNode)
-        while not(dq.isEmpty()):
-            root = dq.deque()
-            if root.data.value == value:
+        dq.put(rootNode)
+        while not(dq.empty()):
+            root = dq.get()
+            if root.data == value:
                 dnode = deepestNode(rootNode)
-                root.data.value = dnode.value
+                root.data = dnode.value
                 deleteDeepNode(rootNode, dnode)
                 return 'Success'
-            if (root.data.left is not None):
-                dq.enque(root.data.left)
+            if (root.left is not None):
+                dq.put(root.left)
 
-            if (root.data.right is not None):
-                dq.enque(root.data.right)
+            if (root.right is not None):
+                dq.put(root.right)
         return 'Fail to Delete'
 
 
@@ -165,30 +164,38 @@ def deleteEntireBinaryTree(rootNode):
     rootNode.right = None
 
 
-drinks = TreeNode('drinks')
-hot = TreeNode('hot')
-cold = TreeNode('cold')
-coffee = TreeNode('coffee')
-tea = TreeNode('tea')
-alc = TreeNode('alcoholic')
-nalc = TreeNode('non-alcoholic')
-drinks.left = hot
-drinks.right = cold
-hot.left = coffee
-hot.right = tea
-cold.left = alc
-cold.right = nalc
+A = TreeNode(5)
+insertNode(A, 1)
+insertNode(A, 3)
+insertNode(A, 2)
+insertNode(A, 7)
+insertNode(A, 8)
+insertNode(A, 6)
+insertNode(A, 4)
+inOrderTraversal(A)
+# hot = TreeNode('hot')
+# cold = TreeNode('cold')
+# coffee = TreeNode('coffee')
+# tea = TreeNode('tea')
+# alc = TreeNode('alcoholic')
+# nalc = TreeNode('non-alcoholic')
+# drinks.left = hot
+# drinks.right = cold
+# hot.left = coffee
+# hot.right = tea
+# cold.left = alc
+# cold.right = nalc
 
-insertNode(drinks, 'capuccino')
-insertNode(drinks, 'mocha')
-insertNode(drinks, 'black tea')
-insertNode(drinks, 'green tea')
-insertNode(drinks, 'beer')
-insertNode(drinks, 'whisky')
-insertNode(drinks, 'ice tea')
-insertNode(drinks, 'mojito')
+# insertNode(drinks, 'capuccino')
+# insertNode(drinks, 'mocha')
+# insertNode(drinks, 'black tea')
+# insertNode(drinks, 'green tea')
+# insertNode(drinks, 'beer')
+# insertNode(drinks, 'whisky')
+# insertNode(drinks, 'ice tea')
+# insertNode(drinks, 'mojito')
 
 # deleteNode(drinks, 'tea')
-deleteEntireBinaryTree(drinks)
-printInLevels(drinks)
+# deleteEntireBinaryTree(drinks)
+# printInLevels(drinks)
 # print(searchBinaryTree(drinks, 'tea'))
