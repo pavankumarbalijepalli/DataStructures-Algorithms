@@ -1,0 +1,13 @@
+### 1. Tell me about yourself.
+
+`I'm a data science analyst working for tiger analytics with 3 years of experience in Data Science and Machine Learning.  I have worked on various parts of Data Science such as Traditional Machine Learning, Deep Learning, and Computer Vision. I have a specialization in deep learning from deeplearning.ai, and I'm currently pursuing a Master's in Data Science from BITS Pilani WILP.`
+
+### 2. Work @ Wipro.
+
+`I worked for Marelli during my time at Wipro. The business problem was to create a solution that reduces the waiting time for the customer that has come to their service centres. The problem had many solutions and I was put into the creation of a 'Spare part availability tracking system', which is a mobile application which takes the picture of the damaged part and is compared with the images from the database using a Siamese model. The image is processed through an object detection model (Yolo_V3) which returns a cropped image containing the closeup image of the spare part. This image is encoded into a 4096 vector using a convolutional neural encoder network and compared against the image present in the database. This eliminated the requirement for skilled professional at the service centre who understands all of the models and spare parts. Before the model was about to get deployed into production, I left the organisation.`
+
+### 3. Work @ Tiger Analytics
+
+`I worked for Hartford Insurance Group. The business problem was to classify the customer data to understand if that customer can be provided with insurance. It was broken down into various categories such as defaulting, classification of disease, and premium avation etc. I was put into classification of disease. The hartford customer data, along with ICD 11, published by W.H.O, gave an deeper insight on diseases. Features such as mortality rate, density, and morbidity rate are provided by ICD 11 and customer data over time with diseases, potential diseases, age are provided by HARTFORD. With a combination of both the information, a model has been built to recommend with certain confidence if the insurance application to be approved or denied. It has been deployed and monitored for KPI and auto re-train. After this I was shifted into model monitoring team where I developed a drift monitoring framework which will send warning mails to model owners when the data is drifting away from the benchmark/training data.`
+
+### 4. 
