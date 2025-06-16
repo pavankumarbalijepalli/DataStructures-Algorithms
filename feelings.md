@@ -49,8 +49,6 @@ __Date: 10/06/2022 18:40:44__
 * __Feeling:__ positive
 * __Description:__ This was good. I tried submitting the code for the first time and it accepted with 87% better than others. Even though it was an easy question, feeling is dope.
 
-
-
 __Date: 16/06/2022 16:04:00__
 * __Working on:__ Data Structures Learning Path
 * __Feeling:__ positive
@@ -60,3 +58,8 @@ __Date: 21/06/2022 21:42:18__
 * __Working on:__ Blind 75
 * __Feeling:__ positive
 * __Description:__ feeling good. Just finished DSA assignment for my masters. Will start Blind 5 questions now.
+
+__Date: 16/06/2025 22:15:47__
+* __Working on:__ Google Interview Round 1 Complete
+* __Feeling:__ Negative
+* __Description:__ I did not do well. I did not even write code. There is no way I'm getting it. It's stupid. I did a very very bad job. Can't wait to get better and give another shot.
